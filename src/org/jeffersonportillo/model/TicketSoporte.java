@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.jeffersonportillo.model;
 
 public class TicketSoporte {
@@ -19,12 +24,17 @@ public class TicketSoporte {
         this.facturaId = facturaId;
     }
 
-    public TicketSoporte(int ticketSoporteId, String descripcionTicket, String estatus, int clienteId, int facturaId) {
+    public TicketSoporte(int ticketSoporteId, String descripcionTicket, String estatus, String cliente, int clienteId, int facturaId) {
         this.ticketSoporteId = ticketSoporteId;
         this.descripcionTicket = descripcionTicket;
         this.estatus = estatus;
+        this.cliente = cliente;
         this.clienteId = clienteId;
         this.facturaId = facturaId;
+    }
+
+    public TicketSoporte(int ticketSoporteId, String descripcion, String estatus, String cliente) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public int getTicketSoporteId() {
@@ -78,5 +88,5 @@ public class TicketSoporte {
     @Override
     public String toString() {
         return "TicketSoporte{" + "ticketSoporteId=" + ticketSoporteId + ", descripcionTicket=" + descripcionTicket + ", estatus=" + estatus + ", cliente=" + cliente + ", clienteId=" + clienteId + ", facturaId=" + facturaId + '}';
-    }
+    }   
 }

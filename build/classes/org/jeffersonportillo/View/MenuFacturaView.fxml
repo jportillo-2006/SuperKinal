@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jeffersonportillo.controller.MenuFacturaController">
+   <children>
+      <ImageView fitHeight="471.0" fitWidth="765.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Menu%20Factura.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfFacturaId" editable="false" layoutX="46.0" layoutY="57.0" prefHeight="25.0" prefWidth="200.0" promptText="Factura ID" style="-fx-background-color: white;" />
+      <ComboBox fx:id="cmbCliente" layoutX="268.0" layoutY="57.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <ComboBox fx:id="cmbEmpleado" layoutX="425.0" layoutY="57.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <Button fx:id="btnRegresar" layoutX="574.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGuardar" layoutX="421.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Guardar">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVaciar" layoutX="272.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Vaciar">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfFecha" layoutX="46.0" layoutY="149.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <TextField fx:id="tfHora" layoutX="46.0" layoutY="265.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <TextField fx:id="tfTotal" layoutX="46.0" layoutY="377.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <TableView fx:id="tblFacturas" layoutX="268.0" layoutY="125.0" onMouseClicked="#cargarDatosEditar" prefHeight="200.0" prefWidth="486.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn fx:id="colFacturaId" prefWidth="68.0" style="-fx-border-color: #130716;" text="Factura ID" />
+            <TableColumn fx:id="colFecha" prefWidth="76.0" style="-fx-border-color: #130716;" text="Fecha" />
+            <TableColumn fx:id="colHora" prefWidth="85.0" style="-fx-border-color: #130716;" text="Hora" />
+            <TableColumn fx:id="colTotal" prefWidth="86.0" style="-fx-border-color: #130716;" text="Total" />
+            <TableColumn fx:id="colCliente" prefWidth="74.0" style="-fx-border-color: #130716;" text="Cliente ID" />
+            <TableColumn fx:id="colEmpleado" prefWidth="87.0" style="-fx-border-color: #130716;" text="Empleado ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

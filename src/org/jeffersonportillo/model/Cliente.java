@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.jeffersonportillo.model;
 
 public class Cliente {
@@ -67,9 +72,9 @@ public class Cliente {
     public void setNit(String nit) {
         this.nit = nit;
     }
- 
+
     @Override
     public String toString() {
-        return "Id: " + clienteId + " | " + nombre + " " + apellido;
-    }
+        return "{Id: " + clienteId + '}' + " { Nombre: " + nombre + '}' +" { Apellido: " + apellido + '}';
+    }   
 }

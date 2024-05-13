@@ -18,7 +18,16 @@
         <menus>
           <Menu mnemonicParsing="false" text="Modulos">
             <items>
-              <MenuItem fx:id="btnMenuClientes" mnemonicParsing="false" onAction="#handleButtonAction" text="Clientes" />
+                  <MenuItem fx:id="btnTicketSoporte" mnemonicParsing="false" text="btnTicketSoporte" />
+                  <MenuItem fx:id="btnDistribuidor" mnemonicParsing="false" text="btnDistribuidor" />
+                  <MenuItem fx:id="btnCargos" mnemonicParsing="false" text="btnCargos" />
+                  <MenuItem fx:id="btnEmpleados" mnemonicParsing="false" text="btnEmpleados" />
+              <MenuItem fx:id="btnMenuClientes" mnemonicParsing="false" onAction="#handleButtonAction" text="btnClientes" />
+                  <MenuItem mnemonicParsing="false" text="btnProductos" />
+                  <MenuItem mnemonicParsing="false" text="btnCategoriaProductos" />
+                  <MenuItem mnemonicParsing="false" text="btnCompras" />
+                  <MenuItem mnemonicParsing="false" text="btnFacturas" />
+                  <MenuItem fx:id="btnPromocion" mnemonicParsing="false" text="btnPromocion" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Reportes">

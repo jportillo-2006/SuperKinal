@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jeffersonportillo.controller.MenuPromocionController">
+   <children>
+      <ImageView fitHeight="471.0" fitWidth="765.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Menu%20Promocion.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfPromocionId" editable="false" layoutX="40.0" layoutY="56.0" prefHeight="25.0" prefWidth="182.0" promptText="Id de la promocion" style="-fx-background-color: white;" />
+      <TextField fx:id="tfPrecio" layoutX="40.0" layoutY="130.0" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: white;" />
+      <TextField fx:id="tfFechaInicio" layoutX="40.0" layoutY="337.0" prefHeight="35.0" prefWidth="182.0" style="-fx-background-color: white;" />
+      <ComboBox fx:id="cmbProducto" layoutX="251.0" layoutY="59.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <TextArea fx:id="taDescripcion" layoutX="40.0" layoutY="203.0" prefHeight="91.0" prefWidth="182.0" style="-fx-background-color: white;" wrapText="true" />
+      <TextField fx:id="tfFechaFinalizacion" layoutX="40.0" layoutY="422.0" prefHeight="35.0" prefWidth="182.0" style="-fx-background-color: white;" />
+      <TableView fx:id="tblPromociones" layoutX="249.0" layoutY="94.0" onMouseClicked="#cargarDatosEditar" prefHeight="264.0" prefWidth="500.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn fx:id="colPromocionId" prefWidth="86.0" style="-fx-border-color: #130716;" text="Promocion ID" />
+            <TableColumn fx:id="colPrecio" prefWidth="64.0" style="-fx-border-color: #130716;" text="Precio" />
+            <TableColumn fx:id="colDescripcion" style="-fx-border-color: #130716;" text="Descripcion" />
+            <TableColumn fx:id="colFechaInicio" prefWidth="84.0" style="-fx-border-color: #130716;" text="F. Inicio" />
+            <TableColumn fx:id="colFechaFinalizacion" prefWidth="103.0" style="-fx-border-color: #130716;" text="F. Finalizacion" />
+            <TableColumn fx:id="colProducto" prefWidth="73.0" style="-fx-border-color: #130716;" text="Producto" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnRegresar" layoutX="552.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGuardar" layoutX="401.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Guardar">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVaciar" layoutX="249.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Vaciar">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -12,7 +12,7 @@ public class ClienteDTO {
     private Cliente cliente;
     
     private ClienteDTO(){
-    
+        
     }
     
     public static ClienteDTO getClienteDTO(){
