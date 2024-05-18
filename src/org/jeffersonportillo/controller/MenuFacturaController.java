@@ -30,7 +30,7 @@ import org.jeffersonportillo.system.Main;
 
 public class MenuFacturaController implements Initializable {
 
-       private Main stage;
+    private Main stage;
     
     private static Connection conexion = null;
     private static PreparedStatement statement = null;

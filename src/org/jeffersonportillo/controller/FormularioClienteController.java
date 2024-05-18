@@ -108,7 +108,7 @@ public class FormularioClienteController implements Initializable{
    @FXML
     public void handleButtonAction(ActionEvent event){
         if(event.getSource()== btnCancelar){
-        stage.menuClientesView();
+        stage.menuClienteView();
         ClienteDTO.getClienteDTO().setCliente(null);
         }else if(event.getSource() == btnGuardar){
             if(op == 1){
@@ -121,14 +121,14 @@ public class FormularioClienteController implements Initializable{
                     tfNombre.requestFocus();
                     return;
                 }
-                stage.menuClientesView();
+                stage.menuClienteView();
             }else if(op == 2){
                 
                  if(!tfNombre.getText().equals("") && !tfApellido.getText().equals("")&& !tfDireccion.getText().equals("")){
                      if(SuperKinalAlert.getInstance().mostrarAlertaConfirmacion(406).get() == ButtonType.OK){
                         editarCliente();
                         ClienteDTO.getClienteDTO().setCliente(null);
-                        stage.menuClientesView();
+                        stage.menuClienteView();
                      }
                     
                 }else{

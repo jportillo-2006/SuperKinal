@@ -12,7 +12,7 @@ public class MenuPrincipalController implements Initializable{
     private Main stage;
 
     @FXML
-    MenuItem btnMenuClientes,btnTicketSoporte, btnDistribuidor, btnCargos, btnEmpleados, btnProductos, btnCategoriaProductos,
+    MenuItem btnClientes, btnTicketSoporte , btnDistribuidores, btnCargos, btnEmpleados, btnProductos, btnCategoriaProductos,
             btnCompras, btnFacturas,btnPromociones;
     
     @Override
@@ -30,9 +30,9 @@ public class MenuPrincipalController implements Initializable{
     
     @FXML
     public void handleButtonAction(ActionEvent event){
-        if(event.getSource()== btnMenuClientes){
-        stage.menuClientesView();
-        }else if(event.getSource() == btnDistribuidor){
+        if(event.getSource()== btnClientes){
+            stage.menuClienteView();
+        }else if(event.getSource() == btnDistribuidores){
             stage.menuDistribuidorView();
         }else if(event.getSource() == btnCargos){
             stage.menuCargoView();

@@ -187,10 +187,5 @@ public class MenuCompraController implements Initializable {
 
     public void setStage(Main stage) {
         this.stage = stage;
-    }
-    /**
-     * Initializes the controller class.
-     */
-      
-    
+    }  
 }

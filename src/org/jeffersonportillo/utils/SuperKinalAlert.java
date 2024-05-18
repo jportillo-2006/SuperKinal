@@ -30,7 +30,7 @@ public class SuperKinalAlert {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Campos Pendientes");
             alert.setHeaderText("Campos Pendientes");
-            alert.setContentText("Algunos campos son necesarios para el registro estas pendientes");
+            alert.setContentText("Algunos campos son necesarios para el registro estan pendientes");
             alert.showAndWait();
         }else if(code == 401){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);

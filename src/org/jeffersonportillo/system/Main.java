@@ -24,12 +24,11 @@ import org.jeffersonportillo.controller.MenuFacturaController;
 import org.jeffersonportillo.controller.MenuPrincipalController;
 import org.jeffersonportillo.controller.MenuProductoController;
 import org.jeffersonportillo.controller.MenuPromocionController;
-import org.jeffersonportillo.controller.MenuTicketSoporteController;
 
 public class Main extends Application {
     private Stage stage;
     private Scene scene;
-    private final String URLVIEW = "/org/jeffersonportillo/view/";
+    private final String URLVIEW = "/org/jeffersonportillo/View/";
     
     @Override
     public void start(Stage stage) throws Exception {
@@ -57,7 +56,7 @@ public class Main extends Application {
     
     public void menuPrincipalView(){
         try{
-            MenuPrincipalController menuPrincipalView = (MenuPrincipalController)switchScene("MenuPrincipalView.fxml",1200,750);
+            MenuPrincipalController menuPrincipalView = (MenuPrincipalController)switchScene("MenuPrincipalView.fxml",950,700);
             menuPrincipalView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -75,9 +74,9 @@ public class Main extends Application {
         }
     }
         
-    public void menuClientesView(){
+    public void menuClienteView(){
         try{
-           MenuClienteController menuClientesView = (MenuClienteController)switchScene("MenuClienteView.fxml",1200,750); 
+           MenuClienteController menuClientesView = (MenuClienteController)switchScene("MenuClienteView.fxml",950,700); 
            menuClientesView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -96,8 +95,8 @@ public class Main extends Application {
     
     public void menuDistribuidorView(){
         try{
-            MenuDistribuidorController menuDistribuidorView = (MenuDistribuidorController)switchScene("MenuDistribuidorView.fxml",1200,750);
-            menuDistribuidorView.setStage(this);
+            MenuDistribuidorController menuDistribuidoresView = (MenuDistribuidorController)switchScene("MenuDistribuidorView.fxml",1200,750);
+            menuDistribuidoresView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
