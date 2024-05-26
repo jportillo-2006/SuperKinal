@@ -18,7 +18,6 @@ import org.jeffersonportillo.model.Compra;
 import org.jeffersonportillo.system.Main;
 import org.jeffersonportillo.utils.SuperKinalAlert;
 
-
 public class FormularioCompraController implements Initializable {
     private Main stage;
     private int op;
@@ -140,7 +139,5 @@ public class FormularioCompraController implements Initializable {
 
     public void setOp(int op) {
         this.op = op;
-    }
-    
-    
+    }   
 }

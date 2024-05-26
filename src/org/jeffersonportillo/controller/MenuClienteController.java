@@ -168,7 +168,7 @@ public class MenuClienteController implements Initializable {
         this.stage = stage;
     }
     
-         @FXML
+    @FXML
     public void handleButtonAction(ActionEvent event){
         if(event.getSource()== btnAgregar){
         stage.formClienteView(1);

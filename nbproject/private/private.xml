@@ -3,9 +3,30 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/informatica/Desktop/Repositorios%20Github/SuperKinal/src/org/jeffersonportillo/model/Cargo.java</file>
-            <file>file:/C:/Users/informatica/Desktop/Repositorios%20Github/SuperKinal/src/org/jeffersonportillo/utils/SuperKinalAlert.java</file>
-            <file>file:/C:/Users/informatica/Desktop/Repositorios%20Github/SuperKinal/src/org/jeffersonportillo/system/Main.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/system/Main.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/controller/MenuPromocionController.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/controller/LoginController.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/View/FormularioEmpleadoView.fxml</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/controller/MenuClienteController.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/View/FormularioClienteView.fxml</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/View/LoginView.fxml</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/View/MenuFacturaView.fxml</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/controller/MenuProductoController.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/controller/MenuCargoController.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/resources/Paleta%20de%20colores.jpg</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/dao/Conexion.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/View/FormularioCompraView.fxml</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/utils/PasswordUtils.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/model/Usuario.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/View/FormularioCargoView.fxml</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/controller/FormularioUsuarioController.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/controller/MenuPrincipalController.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/controller/FormularioClienteController.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/utils/SuperKinalAlert.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/View/FormularioUsuarioView.fxml</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/model/NivelAcceso.java</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/View/MenuClienteView.fxml</file>
+            <file>file:/C:/Users/TEMP/OneDrive/Desktop/SuperKinal/src/org/jeffersonportillo/database/SP%20SQL.sql</file>
         </group>
     </open-files>
 </project-private>

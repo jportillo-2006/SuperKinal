@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.jeffersonportillo.controller;
 
 import java.net.URL;
@@ -12,8 +17,8 @@ public class MenuPrincipalController implements Initializable{
     private Main stage;
 
     @FXML
-    MenuItem btnClientes, btnTicketSoporte , btnDistribuidores, btnCargos, btnEmpleados, btnProductos, btnCategoriaProductos,
-            btnCompras, btnFacturas,btnPromociones;
+    MenuItem btnClientes,btnTicketSoporte, btnDistribuidores, btnCargos, btnEmpleados, btnProductos, btnCategoriaProductos,
+            btnCompras, btnFacturas,btnPromocion;
     
     @Override
         public void initialize(URL location, ResourceBundle resources){
@@ -31,7 +36,9 @@ public class MenuPrincipalController implements Initializable{
     @FXML
     public void handleButtonAction(ActionEvent event){
         if(event.getSource()== btnClientes){
-            stage.menuClienteView();
+        stage.menuClientesView();
+        }else if(event.getSource() == btnTicketSoporte){
+            stage.menuTickettSoporteView();
         }else if(event.getSource() == btnDistribuidores){
             stage.menuDistribuidorView();
         }else if(event.getSource() == btnCargos){
@@ -46,6 +53,8 @@ public class MenuPrincipalController implements Initializable{
             stage.menuCompraView();
         }else if(event.getSource() == btnFacturas){
             stage.menuFacturaView();
+        }else if(event.getSource() == btnPromocion){
+            stage.menuPromocionView();
         }
-    }
+    } 
 }

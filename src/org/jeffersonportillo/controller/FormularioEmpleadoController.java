@@ -100,6 +100,7 @@ public class FormularioEmpleadoController implements Initializable {
             }
         }
     }
+    
     public void editarEmpleado(){
         try{
             conexion = Conexion.getInstance().obtenerConexion();
@@ -129,8 +130,6 @@ public class FormularioEmpleadoController implements Initializable {
             }
         }
     }
-    
-    
 
     @FXML
     public void handleButtonAction(ActionEvent event){
@@ -283,6 +282,5 @@ public class FormularioEmpleadoController implements Initializable {
             }
         }
         return index;
-    }
-    
+    }   
 }

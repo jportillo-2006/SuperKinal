@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.jeffersonportillo.controller;
 
 import java.net.URL;
@@ -43,9 +48,7 @@ public class MenuEmpleadoController implements Initializable {
     @FXML
     TableColumn colEmpleadoId,colNombreEmpleado,colApellidoEmpleado,colSueldo,colEntrada,colSalida,colCargoId,colEncargado;
 
-    
     @FXML
-    
     public void handleButtonAction(ActionEvent event){
         if(event.getSource() == btnAgregar){
             stage.formEmpleadosView(1);
@@ -201,7 +204,6 @@ public class MenuEmpleadoController implements Initializable {
         return empleado;
     }
     
-    
     public Main getStage() {
         return stage;
     }
@@ -209,6 +211,4 @@ public class MenuEmpleadoController implements Initializable {
     public void setStage(Main stage) {
         this.stage = stage;
     }
-      
-    
 }

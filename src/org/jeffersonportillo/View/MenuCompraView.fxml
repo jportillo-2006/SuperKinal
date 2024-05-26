@@ -52,15 +52,15 @@
             </Button>
          </children>
       </GridPane>
-      <TableView fx:id="tblCompras" layoutX="330.0" layoutY="280.0" prefHeight="309.0" prefWidth="592.0">
+      <TableView fx:id="tblCompras" layoutX="332.0" layoutY="205.0" prefHeight="309.0" prefWidth="592.0">
          <columns>
             <TableColumn fx:id="colCompraId" prefWidth="117.0" style="-fx-border-color: #130716;" text="Compra ID" />
             <TableColumn fx:id="colFechaCompra" prefWidth="219.0" style="-fx-border-color: #130716;" text="Fecha" />
             <TableColumn fx:id="colTotalCompra" prefWidth="246.0" style="-fx-border-color: #130716;" text="Total" />
          </columns>
       </TableView>
-      <TextField fx:id="tfCompraId" layoutX="667.0" layoutY="243.0" prefHeight="25.0" prefWidth="201.0" promptText="Ingrese El ID De La Compra A Buscar" />
-      <Button fx:id="btnBuscar" layoutX="874.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-border-color: #130716; -fx-border-width: 2; -fx-background-color: white;">
+      <TextField fx:id="tfCompraId" layoutX="680.0" layoutY="168.0" prefHeight="25.0" prefWidth="201.0" promptText="Ingrese El ID De La Compra A Buscar" />
+      <Button fx:id="btnBuscar" layoutX="891.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="24.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -69,7 +69,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="btnRegresar" layoutX="769.0" layoutY="594.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="87.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar" textFill="#130716">
+      <Button fx:id="btnRegresar" layoutX="781.0" layoutY="537.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="87.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar" textFill="#130716">
          <font>
             <Font name="Arial Bold" size="22.0" />
          </font>

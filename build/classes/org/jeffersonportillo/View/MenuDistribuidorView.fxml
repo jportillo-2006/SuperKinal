@@ -19,7 +19,7 @@
             <Image url="@../image/Menu%20Distribuidores.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tblDistribuidor" layoutX="260.0" layoutY="284.0" prefHeight="309.0" prefWidth="717.0">
+      <TableView fx:id="tblDistribuidor" layoutX="260.0" layoutY="234.0" prefHeight="309.0" prefWidth="717.0">
          <columns>
             <TableColumn fx:id="colDistribuidorId" prefWidth="91.0" style="-fx-border-color: #130716;" text="Distribuidor ID" />
             <TableColumn fx:id="colNombre" prefWidth="143.0" style="-fx-border-color: #130716;" text="Nombre" />
@@ -62,13 +62,13 @@
             </Button>
          </children>
       </GridPane>
-      <Button fx:id="btnRegresar" layoutX="857.0" layoutY="607.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="87.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar" textFill="#130716">
+      <Button fx:id="btnRegresar" layoutX="841.0" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="87.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar" textFill="#130716">
          <font>
             <Font name="Arial Bold" size="22.0" />
          </font>
       </Button>
-      <TextField fx:id="tfDistribuidorId" layoutX="727.0" layoutY="248.0" prefHeight="25.0" prefWidth="201.0" promptText="Ingrese El ID Del Distribuidor A Buscar" style="-fx-background-color: white;" />
-      <Button fx:id="btnBuscar" layoutX="939.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-border-color: #130716; -fx-border-width: 2; -fx-background-color: white;">
+      <TextField fx:id="tfDistribuidorId" layoutX="727.0" layoutY="198.0" prefHeight="25.0" prefWidth="201.0" promptText="Ingrese El ID Del Distribuidor A Buscar" style="-fx-background-color: white;" />
+      <Button fx:id="btnBuscar" layoutX="944.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="24.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                <image>

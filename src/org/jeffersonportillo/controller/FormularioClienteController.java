@@ -21,7 +21,6 @@ public class FormularioClienteController implements Initializable{
     private Main stage;
     private int op;
 
-   
    private static Connection conexion;
    private static PreparedStatement statement;
    
@@ -30,8 +29,6 @@ public class FormularioClienteController implements Initializable{
     @FXML
     TextField tfClienteId,tfNombre,tfApellido,tfTelefono,tfDireccion,tfNit;
 
- 
-    
     @Override
     public void initialize(URL location, ResourceBundle resource) {
         if(ClienteDTO.getClienteDTO().getCliente() != null){
@@ -39,8 +36,6 @@ public class FormularioClienteController implements Initializable{
         }
     }
 
-    
-    
    public void agregarCliente(){
        try{
            conexion = Conexion.getInstance().obtenerConexion();
@@ -108,7 +103,7 @@ public class FormularioClienteController implements Initializable{
    @FXML
     public void handleButtonAction(ActionEvent event){
         if(event.getSource()== btnCancelar){
-        stage.menuClienteView();
+        stage.menuClientesView();
         ClienteDTO.getClienteDTO().setCliente(null);
         }else if(event.getSource() == btnGuardar){
             if(op == 1){
@@ -121,14 +116,14 @@ public class FormularioClienteController implements Initializable{
                     tfNombre.requestFocus();
                     return;
                 }
-                stage.menuClienteView();
+                stage.menuClientesView();
             }else if(op == 2){
                 
                  if(!tfNombre.getText().equals("") && !tfApellido.getText().equals("")&& !tfDireccion.getText().equals("")){
                      if(SuperKinalAlert.getInstance().mostrarAlertaConfirmacion(406).get() == ButtonType.OK){
                         editarCliente();
                         ClienteDTO.getClienteDTO().setCliente(null);
-                        stage.menuClienteView();
+                        stage.menuClientesView();
                      }
                     
                 }else{

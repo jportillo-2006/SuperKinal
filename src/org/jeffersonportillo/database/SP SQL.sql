@@ -1,5 +1,30 @@
 use superKinal;
 
+DELIMITER $$
+CREATE PROCEDURE sp_agregarUsuario(us varchar(30), con varchar(100), nivAccId int, empId int)
+	BEGIN
+		INSERT INTO Usuarios(usuario, contrasenia, nivelAccesoId, empleadoId)
+			VALUES(us, con, nivAccId, empId);
+	END $$
+DELIMITER ;
+
+DELIMITER $$
+create PROCEDURE sp_buscarUsuario(IN us varchar(30))
+	BEGIN
+		SELECT * FROM Usuarios
+			where usuario = us;
+	END $$
+DELIMITER ;
+
+DELIMITER $$
+create procedure sp_listarNivelAcceso()
+begin
+	select * from nivelesAcceso;
+end $$
+DELIMITER ;
+
+-- select * from Usuarios
+
 -- Cliente
 
 DELIMITER $$

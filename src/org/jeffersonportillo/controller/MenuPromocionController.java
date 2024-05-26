@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jeffersonportillo.controller;
 
 import java.net.URL;
@@ -30,7 +25,6 @@ import org.jeffersonportillo.model.Promocion;
 import org.jeffersonportillo.system.Main;
 
 public class MenuPromocionController implements Initializable {
-
     private Main stage;
     
     private static Connection conexion = null;
@@ -55,8 +49,6 @@ public class MenuPromocionController implements Initializable {
     @FXML
     Button btnGuardar, btnEliminar, btnRegresar, btnVaciar;
 
-
-    
     public ObservableList<Promocion> listarPromociones(){
         ArrayList<Promocion> promociones = new ArrayList<>();
         try{
@@ -105,8 +97,6 @@ public class MenuPromocionController implements Initializable {
         colFechaFinalizacion.setCellValueFactory(new PropertyValueFactory<Promocion, Integer>("fechaFinalizacion"));
         colProducto.setCellValueFactory(new PropertyValueFactory<Promocion, String>("producto"));
         tblPromociones.getSortOrder().add(colPromocionId);
-
-
     }
     
     public void cargarDatosEditar(){
@@ -129,8 +119,7 @@ public class MenuPromocionController implements Initializable {
             if(productoCmb.equals(productoTbl)){
                 index = i;
                 break;
-            }
-            
+            }   
         }
         return index;
     }
@@ -157,6 +146,7 @@ public class MenuPromocionController implements Initializable {
             conexion = Conexion.getInstance().obtenerConexion();
             String sql = "call sp_AgregarPromocion(?,?,?,?,?)";
             statement = conexion.prepareStatement(sql);
+            //statement.setString(1,tfPrecio.getText());
             statement.setDouble(1, Double.parseDouble(tfPrecio.getText()));
             statement.setString(2, taDescripcion.getText());
             statement.setString(3, tfFechaInicio.getText());
@@ -258,8 +248,7 @@ public class MenuPromocionController implements Initializable {
         cmbProducto.getSelectionModel().clearSelection();
         
     }
-    
-    
+
     public Main getStage() {
         return stage;
     }
@@ -288,7 +277,6 @@ public class MenuPromocionController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         cmbProducto.setItems(listarProductos());
-        cargarDatos();
-        
+        cargarDatos();  
     }    
 }

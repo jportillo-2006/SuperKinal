@@ -37,6 +37,10 @@ public class TicketSoporte {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    public TicketSoporte(int ticketSoporteId, String descripcion, String estatus, String cliente, String factura) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getTicketSoporteId() {
         return ticketSoporteId;
     }
@@ -89,4 +93,8 @@ public class TicketSoporte {
     public String toString() {
         return "TicketSoporte{" + "ticketSoporteId=" + ticketSoporteId + ", descripcionTicket=" + descripcionTicket + ", estatus=" + estatus + ", cliente=" + cliente + ", clienteId=" + clienteId + ", facturaId=" + facturaId + '}';
     }   
+
+    public String getFactura() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

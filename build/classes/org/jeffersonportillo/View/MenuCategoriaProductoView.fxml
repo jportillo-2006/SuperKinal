@@ -52,20 +52,20 @@
             </Button>
          </children>
       </GridPane>
-      <TableView fx:id="tblCategorias" layoutX="309.0" layoutY="269.0" prefHeight="309.0" prefWidth="592.0">
+      <TableView fx:id="tblCategorias" layoutX="309.0" layoutY="198.0" prefHeight="309.0" prefWidth="592.0">
          <columns>
             <TableColumn fx:id="colCategoriaId" prefWidth="117.0" style="-fx-border-color: #130716;" text="Categoria Id" />
             <TableColumn fx:id="colNombreCategoria" prefWidth="117.0" style="-fx-border-color: #130716;" text="Nombre Categoria" />
             <TableColumn fx:id="colDescripcionCategoria" prefWidth="348.0" style="-fx-border-color: #130716;" text="Descripcion" />
          </columns>
       </TableView>
-      <Button fx:id="btnRegresar" layoutX="759.0" layoutY="584.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="87.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar" textFill="#130716">
+      <Button fx:id="btnRegresar" layoutX="760.0" layoutY="522.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="87.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar" textFill="#130716">
          <font>
             <Font name="Arial Bold" size="22.0" />
          </font>
       </Button>
-      <TextField fx:id="tfCategoriaId" layoutX="657.0" layoutY="233.0" prefHeight="25.0" prefWidth="201.0" promptText="Ingrese El ID De La Categoria A Buscar" style="-fx-background-color: white;" />
-      <Button fx:id="btnBuscar" layoutX="864.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: white;">
+      <TextField fx:id="tfCategoriaId" layoutX="659.0" layoutY="160.0" prefHeight="25.0" prefWidth="201.0" promptText="Ingrese El ID De La Categoria A Buscar" style="-fx-background-color: white;" />
+      <Button fx:id="btnBuscar" layoutX="868.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="24.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                <image>

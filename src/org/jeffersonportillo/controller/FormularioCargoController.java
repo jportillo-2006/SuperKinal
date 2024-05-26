@@ -142,5 +142,5 @@ public class FormularioCargoController implements Initializable {
 
     public void setOp(int op) {
         this.op = op;
-    }  
+    } 
 }

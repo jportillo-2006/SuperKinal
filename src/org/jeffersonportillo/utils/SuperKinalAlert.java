@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jeffersonportillo.utils;
 
 import java.util.Optional;
@@ -30,13 +25,25 @@ public class SuperKinalAlert {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Campos Pendientes");
             alert.setHeaderText("Campos Pendientes");
-            alert.setContentText("Algunos campos son necesarios para el registro estan pendientes");
+            alert.setContentText("Algunos campos son necesarios para el registro estas pendientes");
             alert.showAndWait();
         }else if(code == 401){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Confirmacion De Registro");
             alert.setHeaderText("Confirmacion De Registro");
             alert.setContentText("El Registro Se Ha Creado Con Exito");
+            alert.showAndWait();
+        }else if(code == 2007){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Usuario incorrecto");
+            alert.setHeaderText("Usuario incorrecto");
+            alert.setContentText("Verifique el usuario");
+            alert.showAndWait();
+        }else if(code == 2008){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Contraseña incorrecta");
+            alert.setHeaderText("Contraseña incorrecta");
+            alert.setContentText("Verifique la contraseña");
             alert.showAndWait();
         }
     }
@@ -57,5 +64,12 @@ public class SuperKinalAlert {
         action = alert.showAndWait();
         }
         return action;
+    }
+    
+    public void alertaSaludo(String usuario){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Bienvenido");
+        alert.setHeaderText("Bienvenido " + usuario);
+        alert.showAndWait();
     }
 }

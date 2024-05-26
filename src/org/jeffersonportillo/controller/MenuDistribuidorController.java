@@ -1,3 +1,4 @@
+
 package org.jeffersonportillo.controller;
 
 import java.net.URL;
@@ -193,7 +194,7 @@ public class MenuDistribuidorController implements Initializable {
         }
         return distribuidor;
     }
-    
+
     public Main getStage() {
         return stage;
     }

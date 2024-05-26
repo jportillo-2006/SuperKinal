@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.jeffersonportillo.controller;
 
 import java.net.URL;
@@ -29,7 +34,6 @@ import org.jeffersonportillo.model.Factura;
 import org.jeffersonportillo.system.Main;
 
 public class MenuFacturaController implements Initializable {
-
     private Main stage;
     
     private static Connection conexion = null;
@@ -66,7 +70,6 @@ public class MenuFacturaController implements Initializable {
             vaciarCampos();
         }
     }
-    
     
     public void vaciarCampos(){
         tfFacturaId.clear();
@@ -299,7 +302,7 @@ public class MenuFacturaController implements Initializable {
             }
         }
     }
-    
+     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         cmbCliente.setItems(listarClientes());
@@ -316,6 +319,4 @@ public class MenuFacturaController implements Initializable {
     public void setStage(Main stage) {
         this.stage = stage;
     }
-       
-    
 }

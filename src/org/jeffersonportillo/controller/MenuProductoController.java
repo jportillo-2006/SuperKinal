@@ -62,9 +62,7 @@ public class MenuProductoController implements Initializable {
     ImageView imgCargar, imgMostrar;
     @FXML
     Label lblNombreProducto, lblStock, lblUnitario, lblMayor, lblCompra;
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         cmbDistribuidores.setItems(listarDistribuidores());
@@ -103,8 +101,6 @@ public class MenuProductoController implements Initializable {
         }catch(Exception e){
             e.printStackTrace();
         }
-        
-        
     }
     
     @FXML
@@ -197,9 +193,7 @@ public class MenuProductoController implements Initializable {
             InputStream img = new FileInputStream(files.get(0));
             statement.setBinaryStream(7,img);
             statement.setInt(8,((Distribuidor)cmbDistribuidores.getSelectionModel().getSelectedItem()).getDistribuidorId());
-            //statement.setString(8, tfDistribuidor.getText());
             statement.setInt(9,((CategoriaProducto)cmbCategorias.getSelectionModel().getSelectedItem()).getCategoriaProductoId());
-            //statement.setString(9, tfCategoria.getText());
             statement.execute();
         }catch(Exception e){
             e.printStackTrace();
@@ -340,7 +334,6 @@ public class MenuProductoController implements Initializable {
         return FXCollections.observableList(categorias);
     }
     
-    
     public int obtenerIndexDistribuidor(){
         int index = 0;
         for(int i = 0 ; i <= cmbDistribuidores.getItems().size() ; i++){
@@ -369,7 +362,6 @@ public class MenuProductoController implements Initializable {
         return index;
     }
     
-    
     public Main getStage() {
         return stage;
     }
@@ -381,5 +373,4 @@ public class MenuProductoController implements Initializable {
     public void setOp(int op) {
         this.op = op;
     }
-    
 }

@@ -179,15 +179,12 @@ public class MenuCategoriaProductoController implements Initializable {
         }
         return categoriaProducto;
     }  
-    
-    
-    
+
      public Main getStage() {
         return stage;
     }
 
     public void setStage(Main stage) {
         this.stage = stage;
-    }
-    
+    }   
 }

@@ -5,8 +5,10 @@ import javafx.stage.Stage;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXMLLoader;
 import java.io.InputStream;
+import static javafx.application.Application.launch;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import org.jeffersonportillo.controller.FormularioCargoController;
 import org.jeffersonportillo.controller.FormularioCategoriaProductoController;
@@ -14,6 +16,8 @@ import org.jeffersonportillo.controller.FormularioClienteController;
 import org.jeffersonportillo.controller.FormularioCompraController;
 import org.jeffersonportillo.controller.FormularioDistribuidorController;
 import org.jeffersonportillo.controller.FormularioEmpleadoController;
+import org.jeffersonportillo.controller.FormularioUsuarioController;
+import org.jeffersonportillo.controller.LoginController;
 import org.jeffersonportillo.controller.MenuCargoController;
 import org.jeffersonportillo.controller.MenuCategoriaProductoController;
 import org.jeffersonportillo.controller.MenuClienteController;
@@ -24,6 +28,7 @@ import org.jeffersonportillo.controller.MenuFacturaController;
 import org.jeffersonportillo.controller.MenuPrincipalController;
 import org.jeffersonportillo.controller.MenuProductoController;
 import org.jeffersonportillo.controller.MenuPromocionController;
+import org.jeffersonportillo.controller.MenuTicketSoporteController;
 
 public class Main extends Application {
     private Stage stage;
@@ -33,9 +38,11 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         this.stage = stage;
-        stage.setTitle("SuperKinal App");
-        menuPrincipalView();
+        formUsuarioView();
+        stage.setTitle("superKinal");
         stage.show();
+        Image icon = new Image("/org/jeffersonportillo/image/IconProgram.png");
+        stage.getIcons().add(icon);
     }
     
     public Initializable switchScene(String fxmlName, int width, int height)throws Exception{
@@ -56,7 +63,7 @@ public class Main extends Application {
     
     public void menuPrincipalView(){
         try{
-            MenuPrincipalController menuPrincipalView = (MenuPrincipalController)switchScene("MenuPrincipalView.fxml",950,700);
+            MenuPrincipalController menuPrincipalView = (MenuPrincipalController)switchScene("MenuPrincipalView.fxml",950,675);
             menuPrincipalView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -65,7 +72,7 @@ public class Main extends Application {
     
     public void formClienteView(int op){
         try{
-            FormularioClienteController formClienteView = (FormularioClienteController)switchScene("FormularioClienteView.fxml",380,520);
+            FormularioClienteController formClienteView = (FormularioClienteController)switchScene("FormularioClienteView.fxml",500,750);
             formClienteView.setOp(op);
             formClienteView.setStage(this);
         }catch(Exception e){
@@ -74,10 +81,19 @@ public class Main extends Application {
         }
     }
         
-    public void menuClienteView(){
+    public void menuClientesView(){
         try{
-           MenuClienteController menuClientesView = (MenuClienteController)switchScene("MenuClienteView.fxml",950,700); 
+           MenuClienteController menuClientesView = (MenuClienteController)switchScene("MenuClienteView.fxml",1200,750); 
            menuClientesView.setStage(this);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+    
+     public void menuTickettSoporteView(){
+        try{
+            MenuTicketSoporteController menuTicketSoporteView = (MenuTicketSoporteController)switchScene("MenuTicketSoporteView.fxml",765,471);
+            menuTicketSoporteView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
@@ -95,8 +111,8 @@ public class Main extends Application {
     
     public void menuDistribuidorView(){
         try{
-            MenuDistribuidorController menuDistribuidoresView = (MenuDistribuidorController)switchScene("MenuDistribuidorView.fxml",1200,750);
-            menuDistribuidoresView.setStage(this);
+            MenuDistribuidorController menuDistribuidorView = (MenuDistribuidorController)switchScene("MenuDistribuidorView.fxml",1200,750);
+            menuDistribuidorView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
@@ -202,6 +218,26 @@ public class Main extends Application {
             menuPromocionView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
+        }
+    }
+     
+     public void loginView(){
+        try{
+            LoginController LoginView = (LoginController)switchScene("LoginView.fxml", 500, 750);
+            LoginView.setStage(this);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    }
+    
+    public void formUsuarioView(){
+        try{
+            FormularioUsuarioController FormUsuarioView = (FormularioUsuarioController)switchScene("FormularioUsuarioView.fxml", 500, 750);
+            FormUsuarioView.setStage(this);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 

@@ -35,7 +35,6 @@ create table Clientes(
     primary key PK_clienteId(clienteId)
 );
 
-
 create table Empleados(
 	empleadoId int not null auto_increment,
 	nombreEmpleado varchar(30) not null,
@@ -66,7 +65,6 @@ create table Facturas(
         references Empleados(empleadoId)
 );
 
-
 create table Distribuidores(
     distribuidorId int not null auto_increment,
     nombreDistribuidor varchar(30) not null,
@@ -95,7 +93,6 @@ create table Productos(
         references CategoriaProductos(categoriaProductoId)
 );
 
-
 create table DetalleFactura(
     detalleFacturaId int not null auto_increment,
     facturaId int not null,
@@ -106,8 +103,6 @@ create table DetalleFactura(
     constraint FK_DetalleFactura_Productos foreign key DetalleFactura(productoId)
         references Productos(productoId)
 );
-
-
 
 create table DetalleCompra(
     detalleCompraId int not null auto_increment,
@@ -145,6 +140,24 @@ create table TicketSoporte(
         references Facturas(facturaId)
 );
 
+create table NivelesAcceso (
+	nivelAccesoId int not null auto_increment,
+    nivelAcceso varchar(40) not null,
+    primary key PK_nivelAccesoId(nivelAccesoId)
+);
+
+create table Usuarios(
+	usuarioId int not null auto_increment,
+    usuario varchar(30) not null,
+    contrasenia varchar (100) not null,
+    nivelAccesoId int not null,
+    empleadoId int not null,
+    primary key PK_usuarioId(usuarioId),
+    constraint FK_usuarios_NivelesAcceso foreign key Usuarios (nivelAccesoId)
+		references NivelesAcceso(nivelAccesoId),
+	constraint FK_Usuarios_Empleados foreign key Usuarios(empleadoId)
+		references Empleados(empleadoId)
+);
 
 INSERT INTO Compras(fechaCompra, totalCompra)VALUES
  ('2024-01-20', 75.00);
@@ -156,8 +169,8 @@ INSERT INTO Cargos(nombreCargo, descripcionCargo)VALUES
  ('Gerente', 'Encargado de la administracion');
 
 insert into Clientes(nombre,apellido,telefono,direccion, nit) values
-	('Vladimir','Putin','2945-5931','Valle de las nieves', '235213'),
-    ('Nicolas','Maduro','1847-4892','Colonia 4','346631');
+('Vladimir','Putin','2945-5931','Valle de las nieves', '235213'),
+('Nicolas','Maduro','1847-4892','Colonia 4','346631');
     
 INSERT INTO Empleados(nombreEmpleado, apellidoEmpleado, sueldo, horaEntrada, horaSalida, cargoId, encargado)VALUES
  ('Pablo', 'Lopez', 3600.00, '10:00:00', '18:00:00', 1, NULL);
@@ -182,5 +195,9 @@ INSERT INTO Promociones(precioPromocion, descripcionPromocion, fechaInicio, fech
 
 INSERT INTO TicketSoporte(descripcionTicket, estatus, clienteId, facturaId)VALUES
  ('Problema random', 'Pendiente', 1, 1);
+
+INSERT INTO nivelesAcceso (nivelAccesoId, nivelAcceso) values
+	(1, 'Admin'),
+    (2, 'Usuario');
 
 set global time_zone = '-6:00';

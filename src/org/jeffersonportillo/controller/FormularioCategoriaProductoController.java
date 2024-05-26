@@ -18,7 +18,6 @@ import org.jeffersonportillo.model.CategoriaProducto;
 import org.jeffersonportillo.system.Main;
 import org.jeffersonportillo.utils.SuperKinalAlert;
 
-
 public class FormularioCategoriaProductoController implements Initializable {
     private Main stage;
     private int op;

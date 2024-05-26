@@ -83,9 +83,7 @@ public class MenuCompraController implements Initializable {
         colFechaCompra.setCellValueFactory(new PropertyValueFactory<Compra, String>("fechaCompra"));
         colTotalCompra.setCellValueFactory(new PropertyValueFactory<Compra, String>("totalCompra"));
     }
-    
-    
-    
+
     public ObservableList<Compra> listarCompras(){
             ArrayList<Compra> compras = new ArrayList<>();
         
@@ -187,5 +185,5 @@ public class MenuCompraController implements Initializable {
 
     public void setStage(Main stage) {
         this.stage = stage;
-    }  
+    }
 }

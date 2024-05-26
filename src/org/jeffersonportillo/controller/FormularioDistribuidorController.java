@@ -17,7 +17,6 @@ import org.jeffersonportillo.model.Distribuidor;
 import org.jeffersonportillo.system.Main;
 import org.jeffersonportillo.utils.SuperKinalAlert;
 
-
 public class FormularioDistribuidorController implements Initializable {
 
    private Main stage;
@@ -133,7 +132,6 @@ public class FormularioDistribuidorController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO
         if(DistribuidorDTO.getDistribuidorDTO().getDistribuidor() != null){
             cargarDatos(DistribuidorDTO.getDistribuidorDTO().getDistribuidor());
         }
@@ -150,5 +148,5 @@ public class FormularioDistribuidorController implements Initializable {
 
     public void setOp(int op) {
         this.op = op;
-    }   
+    }
 }

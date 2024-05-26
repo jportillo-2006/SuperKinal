@@ -34,17 +34,17 @@
             <TableColumn fx:id="colProducto" prefWidth="73.0" style="-fx-border-color: #130716;" text="Producto" />
          </columns>
       </TableView>
-      <Button fx:id="btnRegresar" layoutX="552.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar">
+      <Button fx:id="btnRegresar" layoutX="401.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Regresar">
          <font>
             <Font name="Verdana Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="btnGuardar" layoutX="401.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Guardar">
+      <Button fx:id="btnGuardar" layoutX="249.0" layoutY="416.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Guardar">
          <font>
             <Font name="Verdana Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="btnVaciar" layoutX="249.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Vaciar">
+      <Button fx:id="btnVaciar" layoutX="249.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: white;" text="Vaciar">
          <font>
             <Font name="Verdana Bold" size="12.0" />
          </font>
