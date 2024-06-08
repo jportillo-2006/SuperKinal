@@ -38,7 +38,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         this.stage = stage;
-        formUsuarioView();
+        menuPrincipalView();
         stage.setTitle("superKinal");
         stage.show();
         Image icon = new Image("/org/jeffersonportillo/image/IconProgram.png");

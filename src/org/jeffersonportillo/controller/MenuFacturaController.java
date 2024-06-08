@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jeffersonportillo.controller;
 
 import java.net.URL;
@@ -31,6 +26,7 @@ import org.jeffersonportillo.dao.Conexion;
 import org.jeffersonportillo.model.Cliente;
 import org.jeffersonportillo.model.Empleado;
 import org.jeffersonportillo.model.Factura;
+import org.jeffersonportillo.report.GenerarReporte;
 import org.jeffersonportillo.system.Main;
 
 public class MenuFacturaController implements Initializable {
@@ -41,7 +37,7 @@ public class MenuFacturaController implements Initializable {
     private static ResultSet resultset = null;
     
     @FXML
-    Button btnRegresar, btnGuardar, btnVaciar;
+    Button btnRegresar, btnGuardar, btnVaciar, btnVerFactura;
     
     @FXML
     TextField tfFacturaId, tfHora, tfTotal, tfFecha;
@@ -68,6 +64,8 @@ public class MenuFacturaController implements Initializable {
             }
         }else if(event.getSource() == btnVaciar){
             vaciarCampos();
+        }else if(event.getSource() == btnVerFactura){
+            GenerarReporte.getInstance().generarFactura(((Factura)tblFacturas.getSelectionModel().getSelectedItem()).getFacturaId());
         }
     }
     

@@ -23,9 +23,7 @@ begin
 end $$
 DELIMITER ;
 
-call sp_agregarUsuario ('Vputin', 'RusiaLaMasGrande', 1, 1);
-
-call sp_buscarUsuario();
+-- select * from Usuarios
 
 -- Cliente
 
